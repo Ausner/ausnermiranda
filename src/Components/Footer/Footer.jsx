@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-        <img src={Wave} style={{width: '100%'}} draggable={false}/>
+        <img src={Wave} style={{width: '100%'}} draggable={false} alt="" />
         <div className="f-content">
             <span style={{color: darkMode ? 'black' : '', pointer: 'cursor'}}draggable={false}><a style={{textDecoration: 'none', color: darkMode ? 'black' : 'white'}} href='mailto:ausnermiranda@gmail.com'>ausnermiranda@gmail.com</a></span>
             <div className="f-icons">

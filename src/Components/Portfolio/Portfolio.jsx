@@ -31,23 +31,23 @@ const Portfolio = () => {
         >
             <SwiperSlide>
                 <a href='https://all-pizza.vercel.app/' target='blank'>
-                    <img src={Pizza}/>
+                    <img src={Pizza} alt="" />
                 </a>
             </SwiperSlide>
             <SwiperSlide>
                 <a href='https://official-am-store.vercel.app/' target='blank'>
-                    <img src={Ecommerce}/>
+                    <img src={Ecommerce} alt="" />
                 </a>
 
             </SwiperSlide>
             <SwiperSlide>
                 <a href='https://ausnermiranda.com' target='blank'>
-                    <img src={PortolioPng}/>
+                    <img src={PortolioPng} alt="" />
                 </a>
             </SwiperSlide>
             <SwiperSlide>
                 <a href='https://ubuntu-portfolio.netlify.app/' target='blank'>
-                    <img src={Ubuntu}/>
+                    <img src={Ubuntu} alt="" />
                 </a>
             </SwiperSlide>
         </Swiper>

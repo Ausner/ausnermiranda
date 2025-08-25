@@ -34,19 +34,19 @@ const Works = () => {
       <div className="w-right">
         <div className="w-mainCircle" style={{background: darkMode ? "#666666" : ''}}>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
-            <img src={Upwork}/>
+            <img src={Upwork} alt="" />
           </div>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
-            <img src={Fiverr}/>
+            <img src={Fiverr} alt="" />
           </div>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
-            <img src={Pillar}/>
+            <img src={Pillar} alt="" />
           </div>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
-            <img src={AKC}/>
+            <img src={AKC} alt="" />
           </div>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
-            <img src={github}/>
+            <img src={github} alt="" />
           </div>
         </div>
         {/* Background circles */}

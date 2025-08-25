@@ -7,7 +7,7 @@ const FloatingDiv = ({image, txt1, txt2}) => {
   const darkMode = theme.state.darkMode;
   return (
     <div className="floatingdiv" style={{color: darkMode ? 'white' : '', background: darkMode ? '#454546' : ''}}>
-        <img src={image}/>
+        <img src={image} alt="" />
         <span >
             {txt1}
             <br/>

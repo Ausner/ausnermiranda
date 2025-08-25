@@ -37,24 +37,24 @@ const Intro = () => {
 
             <div className="i-icons">
                 <a href='http://cr.linkedin.com/in/ausner-miranda' target='blank'>
-                    <img src={LinkedIn} draggable={false}/>
+                    <img src={LinkedIn} draggable={false} alt="" />
                 </a>
                 <a href='https://github.com/Ausner' target='blank'>
-                    <img src={Github} draggable={false}/>
+                    <img src={Github} draggable={false} alt="" />
                 </a>
             </div>
 
         </div>
         <div className="i-right">
-            <img src={Vector1} draggable={false}/>
-            <img src={Vector2} draggable={false}/>
-            <img src={me} draggable={false}/>
+            <img src={Vector1} draggable={false} alt="" />
+            <img src={Vector2} draggable={false} alt="" />
+            <img src={me} draggable={false} alt="" />
             <motion.img
             initial={{left:'-36%'}}
             whileInView={{left:'-24%'}}
             transition={transition}
 
-            
+            alt="" 
             src={glassesimgoji}/>
             <div style={{top: '-4%', left: '68%'}}>
                 <FloatingDiv image={crown} txt1="Full Stack" txt2="Developer"/>
