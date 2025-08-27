@@ -16,7 +16,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { motion } from 'framer-motion';
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-
+import { Link } from 'react-scroll';
 const Intro = () => {
     const transition = {duration: 2,type: 'spring'};
   const theme = useContext(themeContext);
@@ -34,7 +34,9 @@ const Intro = () => {
                     producting the Quality work.
                 </span>
             </div>
-            <button className="button i-button">Hire me</button>
+            <Link spy={true} to={'Contact'} smooth={true}>
+                 <button className="button i-button">Hire me</button>
+            </Link> 
 
             <div className="i-icons">
                 <a href='http://cr.linkedin.com/in/ausner-miranda' target='blank'>
