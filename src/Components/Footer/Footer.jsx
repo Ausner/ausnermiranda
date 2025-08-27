@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="f-content">
             <span style={{color: darkMode ? 'black' : '', pointer: 'cursor'}}draggable={false}><a style={{textDecoration: 'none', color: darkMode ? 'black' : 'white'}} href='mailto:ausnermiranda@gmail.com'>ausnermiranda@gmail.com</a></span>
             <div className="f-icons">
-                <span style={{color: darkMode ? 'black' : ''}}>All Rights Reserved {new Date().getFullYear()}</span>
+                <span style={{color: darkMode ? 'black' : '' }}>All Rights Reserved {new Date().getFullYear()}</span>
             </div>
         </div>
     </div>

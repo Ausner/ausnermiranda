@@ -84,10 +84,9 @@
 
 
 .i-right>:nth-child(3){
-    transform: scale(0.40);
-    left: -78%;
-    top: -16rem;
-     mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    transform: scale(0.9);
+    left: 10%;
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
@@ -109,4 +108,29 @@
     top: -18%;
     left: 56%;
     filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+  .intro{
+    flex-direction: column ;
+    height: 64rem;
+    gap: 7rem;
+  }
+
+      .i-right {
+        transform: scale(0.8);
+        left: -3rem;
+    }
+
+    .i-right .blur {
+        display: none;
+    }
+
+    .floating-div:nth-of-type(1) {
+        top: -7rem !important;
+    }
+
+  
+        
+    
 }

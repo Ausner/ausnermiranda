@@ -7,6 +7,7 @@ import Vector1 from '../../img/Vector1.png';
 import Vector2 from '../../img/Vector2.png';
 import boy from '../../img/boy.png';
 import me from '../../img/me.png';
+import flag from '../../img/flag.png'
 
 import thumbup from '../../img/thumbup.png';
 import crown from '../../img/crown.png';
@@ -48,7 +49,7 @@ const Intro = () => {
         <div className="i-right">
             <img src={Vector1} draggable={false} alt="" />
             <img src={Vector2} draggable={false} alt="" />
-            <img src={me} draggable={false} alt="" />
+            <img src={flag} draggable={false} alt="" />
             <motion.img
             initial={{left:'-36%'}}
             whileInView={{left:'-24%'}}
@@ -56,10 +57,10 @@ const Intro = () => {
 
             alt="" 
             src={glassesimgoji}/>
-            <div style={{top: '-4%', left: '68%'}}>
+            <div style={{top: '-4%', left: '68%'}} className='floating-div'>
                 <FloatingDiv image={crown} txt1="Full Stack" txt2="Developer"/>
             </div>
-            <div style={{top: '18rem', left: '0rem'}}>
+            <div style={{top: '18rem', left: '0rem'}} className='floating-div'>
                 <FloatingDiv image={thumbup} txt1="Experienced" txt2="Software Enginner"/>
             </div>
 

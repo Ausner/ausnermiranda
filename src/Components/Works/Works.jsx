@@ -4,7 +4,7 @@ import Upwork from '../../img/Upwork.png';
 import Fiverr from '../../img/fiverr.png';
 import Pillar from '../../img/3pillar-logo.svg';
 import AKC from '../../img/akc-logo.png';
-import github from '../../img/github.png';
+import arche from '../../img/arche.png';
 import { themeContext } from '../../Context';
 
 
@@ -24,7 +24,7 @@ const Works = () => {
           <br/>Fiverr, Personal Projects,
           <br/>3pillar Global, USA Clients, 
           <br/>American Kennel Club Contractor,
-          <br/>Coach for Programming
+          <br/>Arche Software
         </span>
         <button className="button s-button">Hire me</button>
         <div className="blur s-blur1" style={{background: "#ABF1FF94"}}></div>
@@ -39,14 +39,14 @@ const Works = () => {
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
             <img src={Fiverr} alt="" />
           </div>
-          <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
+          <div className="w-secCircle" style={{background: darkMode ? "#666666" : 'black'}}>
             <img src={Pillar} alt="" />
           </div>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
             <img src={AKC} alt="" />
           </div>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
-            <img src={github} alt="" />
+            <img src={arche} width={150} alt="" />
           </div>
         </div>
         {/* Background circles */}

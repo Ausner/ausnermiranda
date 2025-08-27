@@ -38,3 +38,9 @@ textarea {
     left: 8rem;
 }
 
+@media screen and (max-width: 480px) {
+    .contact-form {
+        transform: scale(0.6);
+        justify-content: center;
+    }
+}
