@@ -59,12 +59,22 @@ const Intro = () => {
 
             alt="" 
             src={glassesimgoji}/>
-            <div style={{top: '-4%', left: '68%'}} className='floating-div'>
+            <motion.div style={{top: '-4%', left: '68%'}} 
+            initial={{ top: "-4%", left: "74%" }}
+            whileInView={{ left: "68%" }}
+            transition={transition}
+            className='floating-div'
+            >
                 <FloatingDiv image={crown} txt1="Full Stack" txt2="Developer"/>
-            </div>
-            <div style={{top: '18rem', left: '0rem'}} className='floating-div'>
+            </motion.div>
+            <motion.div style={{top: '18rem', left: '0rem'}} 
+            initial={{ left: "9rem", top: "18rem" }}
+            whileInView={{ left: "0rem" }}
+            transition={transition}
+            className='floating-div'
+            >
                 <FloatingDiv image={thumbup} txt1="Experienced" txt2="Software Enginner"/>
-            </div>
+            </motion.div>
 
             <div className='blur' style={{background: "rgb(230 210 255)"}}></div>
             <div className='blur' style={{background:'#C1F5FF', top: '17rem', width: '21rem', height:'11rem', left: '-9rem'}}></div>

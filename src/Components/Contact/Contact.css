@@ -40,7 +40,12 @@ textarea {
 
 @media screen and (max-width: 480px) {
     .contact-form {
-        transform: scale(0.6);
+        transform: scale(0.5);
         justify-content: center;
+        flex-direction: column;
+        margin-bottom: 7rem;
+    }
+    .c-right{
+        margin-top: 3rem;
     }
 }

@@ -6,10 +6,19 @@ import Humble from '../../img/humble.png';
 import Card from '../Card/Card';
 import Resume from './Resume.pdf';
 import { themeContext } from '../../Context';
+import { motion } from "framer-motion";
 
 const Services = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
+
+    // transition
+    const transition = {
+      duration: 1,
+      type: "spring",
+    };
+
+
   return (
     <div className="services" id='Services'>
         {/* left side */}
@@ -26,17 +35,29 @@ const Services = () => {
         </div>
         {/* right side */}
         <div className="cards">
-          <div style={{left: "14rem"}}>
-            <Card emoji={HeartEmoji} heading={'Software Engineer'} detail={'Lead teams, Coach teammates, Documentation & Architectures, Active participation, SCRUM, KANBAN'}/>
-          </div>
+          <motion.div style={{left: "14rem"}}
+          initial={{ left: "25rem" }}
+          whileInView={{ left: "14rem" }}
+          transition={transition}
+          >
+            <Card emoji={HeartEmoji} heading={'Software Engineer'} detail={'Lead teams, Coaching, Documentation, Architectures, Agile Methods'}/>
+          </motion.div>
 
-          <div style={{top: "12rem", left: "-4rem"}}>
+          <motion.div style={{top: "12rem", left: "-4rem"}}
+          initial={{ left: "-11rem", top: "12rem" }}
+          whileInView={{ left: "-4rem" }}
+          transition={transition}
+          >
             <Card emoji={Glasses} heading={'Developer'} detail={'Angular, React, NodeJS, NestJS, Python, Flask, FastAPI, HTML5, CSS3, JavaScript, Typescript'}/>
-          </div>
+          </motion.div>
 
-          <div style={{top: "19rem", left: "12rem"}}>
+          <motion.div style={{top: "19rem", left: "12rem"}}
+          initial={{ top: "19rem", left: "25rem" }}
+          whileInView={{ left: "12rem" }}
+          transition={transition}
+          >
             <Card emoji={Humble} heading={'Programming Tutor'} detail={'Private lessons, Coaching, Answer Questions, Test Preparation'}/>
-          </div>
+          </motion.div>
           <div className="blur s-blur2" style={{background: "var(--purple)"}}></div>
         </div>
     </div>

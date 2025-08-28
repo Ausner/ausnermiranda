@@ -6,12 +6,21 @@ import Pillar from '../../img/3pillar-logo.svg';
 import AKC from '../../img/akc-logo.png';
 import arche from '../../img/arche.png';
 import { themeContext } from '../../Context';
-
+import { Link } from 'react-scroll';
+import { motion } from "framer-motion";
 
 const Works = () => {
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+
+      // transition
+    const transition = {
+      duration: 1.5,
+      type: "spring",
+    };
+
 
   return (
     <div className="works">
@@ -26,12 +35,21 @@ const Works = () => {
           <br/>American Kennel Club Contractor,
           <br/>Arche Software
         </span>
-        <button className="button s-button">Hire me</button>
+        <Link spy={true} to={'Contact'} smooth={true}>
+          <button className="button s-button">Hire me</button>
+        </Link>
+        
         <div className="blur s-blur1" style={{background: "#ABF1FF94"}}></div>
       </div>
 
       {/* Right side */}
-      <div className="w-right">
+      <motion.div className="w-right"
+      initial={{ rotate: 45 }}
+      whileInView={{ rotate: 0 }}
+      viewport={{ margin: "-40px" }}
+      transition={transition}
+      
+      >
         <div className="w-mainCircle" style={{background: darkMode ? "#666666" : ''}}>
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
             <img src={Upwork} alt="" />
@@ -52,7 +70,7 @@ const Works = () => {
         {/* Background circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
-      </div>
+      </motion.div>
     </div>
   )
 }
