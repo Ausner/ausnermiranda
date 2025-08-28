@@ -59,7 +59,7 @@ const Intro = () => {
 
             alt="" 
             src={glassesimgoji}/>
-            <motion.div style={{top: '-4%', left: '68%'}} 
+            <motion.div 
             initial={{ top: "-4%", left: "74%" }}
             whileInView={{ left: "68%" }}
             transition={transition}
@@ -67,7 +67,7 @@ const Intro = () => {
             >
                 <FloatingDiv image={crown} txt1="Full Stack" txt2="Developer"/>
             </motion.div>
-            <motion.div style={{top: '18rem', left: '0rem'}} 
+            <motion.div 
             initial={{ left: "9rem", top: "18rem" }}
             whileInView={{ left: "0rem" }}
             transition={transition}

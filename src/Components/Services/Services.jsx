@@ -35,7 +35,7 @@ const Services = () => {
         </div>
         {/* right side */}
         <div className="cards">
-          <motion.div style={{left: "14rem"}}
+          <motion.div 
           initial={{ left: "25rem" }}
           whileInView={{ left: "14rem" }}
           transition={transition}
@@ -43,7 +43,7 @@ const Services = () => {
             <Card emoji={HeartEmoji} heading={'Software Engineer'} detail={'Lead teams, Coaching, Documentation, Architectures, Agile Methods'}/>
           </motion.div>
 
-          <motion.div style={{top: "12rem", left: "-4rem"}}
+          <motion.div 
           initial={{ left: "-11rem", top: "12rem" }}
           whileInView={{ left: "-4rem" }}
           transition={transition}
@@ -51,7 +51,7 @@ const Services = () => {
             <Card emoji={Glasses} heading={'Developer'} detail={'Angular, React, NodeJS, NestJS, Python, Flask, FastAPI, HTML5, CSS3, JavaScript, Typescript'}/>
           </motion.div>
 
-          <motion.div style={{top: "19rem", left: "12rem"}}
+          <motion.div 
           initial={{ top: "19rem", left: "25rem" }}
           whileInView={{ left: "12rem" }}
           transition={transition}

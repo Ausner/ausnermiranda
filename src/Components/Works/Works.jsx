@@ -43,14 +43,18 @@ const Works = () => {
       </div>
 
       {/* Right side */}
-      <motion.div className="w-right"
-      initial={{ rotate: 45 }}
-      whileInView={{ rotate: 0 }}
-      viewport={{ margin: "-40px" }}
-      transition={transition}
+      <div 
+
+          className="w-right"
       
       >
-        <div className="w-mainCircle" style={{background: darkMode ? "#666666" : ''}}>
+        <motion.div className="w-mainCircle" style={{background: darkMode ? "#666666" : ''}}
+                  initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: "-40px" }}
+          transition={{ duration: 3.5, type: "spring" }}
+        
+        >
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
             <img src={Upwork} alt="" />
           </div>
@@ -66,11 +70,11 @@ const Works = () => {
           <div className="w-secCircle" style={{background: darkMode ? "#666666" : ''}}>
             <img src={arche} width={150} alt="" />
           </div>
-        </div>
+        </motion.div>
         {/* Background circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
-      </motion.div>
+      </div>
     </div>
   )
 }
